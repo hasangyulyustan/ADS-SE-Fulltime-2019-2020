@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Week_6
+namespace _06.Week
 {
     public class LinkedListNode<T>
     {
@@ -92,7 +92,7 @@ namespace Week_6
 
 
         /// Премахване
-        public T Remove(int index)
+        public T RemoveAt(int index)
         {
             T item = default(T);
             LinkedListNode<T> current = head;
@@ -123,7 +123,7 @@ namespace Week_6
             {
                 if (current.Element.Equals(item))
                 {
-                    Remove(index);
+                    RemoveAt(index);
                     return index;
                 }
                 index++;
@@ -154,7 +154,10 @@ namespace Week_6
                 int i = 0;
                 while (current != null)
                 {
-                    if (i == index) return current.Element;
+                    if (i == index)
+                    {
+                        return current.Element;
+                    }
                     i++;
                     current = current.Next;
                 }

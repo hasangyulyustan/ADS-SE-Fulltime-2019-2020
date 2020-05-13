@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Week_6
+namespace _06.Week
 {
 
     public class QueueNode<T>

@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Week_6
+namespace _06.Week
 {
     public class DoublyLinkedListNode<T>
     {
