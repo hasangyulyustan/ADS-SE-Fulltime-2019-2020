@@ -3,14 +3,14 @@
 
 ### Упражнения по седмици
 
-* [1. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/01.Week) - Преговор. Общи задачи.
-* [2. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/02.Week) - Преговор. Двумерни масиви.
-* [3. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/03.Week) - Алгоротми за сортиране. Метод на мехурчето. Метот чрез пряка селекция. Метод чрез вмъкване.
-* [4. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/04.Week) - Алгоротми за сортиране. Сортиране чрез сливане. Бърза сортировка. Алгоритъм на Шел.
-* [6. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/06.Week) - Линейни структири от данни. Списък - реализация чрез масив и динамична реализация.
+* [1. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/blob/master/ADS-SE-FULLTIME/Week-1) - Преговор. Общи задачи.
+* [2. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/blob/master/ADS-SE-FULLTIME/Week-2) - Преговор. Двумерни масиви.
+* [3. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/blob/master/ADS-SE-FULLTIME/Week-3) - Алгоротми за сортиране. Метод на мехурчето. Метот чрез пряка селекция. Метод чрез вмъкване.
+* [4. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/blob/master/ADS-SE-FULLTIME/Week-4) - Алгоротми за сортиране. Сортиране чрез сливане. Бърза сортировка. Алгоритъм на Шел.
+* [6. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/blob/master/ADS-SE-FULLTIME/Week-6) - Линейни структири от данни. Списък - реализация чрез масив и динамична реализация.
 * [7. Седмица]
 * [8. Седмица]
 * [9. Седмица]
 * [10. Седмица]
-* [Други задачи](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/Other) - Пермутации. Ханойски кули. Задача за лабиринта.
+* [Други задачи](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/blob/master/ADS-SE-FULLTIME/ADS-SE-FULLTIME) - Пермутации. Ханойски кули. Задача за лабиринта.
 
