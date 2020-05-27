@@ -5,11 +5,11 @@ namespace _08.Week
     {
         private class BinaryTreeNode<T> : IComparable<BinaryTreeNode<T>> where T : IComparable<T>
         {
-            internal T value;
-            private bool hasParent;
-            internal BinaryTreeNode<T> parent;
-            internal BinaryTreeNode<T> leftChild;
-            internal BinaryTreeNode<T> rightChild;
+            public T value;
+            public bool hasParent;
+            public BinaryTreeNode<T> parent;
+            public BinaryTreeNode<T> leftChild;
+            public BinaryTreeNode<T> rightChild;
 
             public BinaryTreeNode(T value, BinaryTreeNode<T> leftChild, BinaryTreeNode<T> rightChild)
             {
