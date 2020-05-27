@@ -8,7 +8,7 @@
 * [3. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/03.Week) - Алгоротми за сортиране. Метод на мехурчето. Метот чрез пряка селекция. Метод чрез вмъкване.
 * [4. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/04.Week) - Алгоротми за сортиране. Сортиране чрез сливане. Бърза сортировка. Алгоритъм на Шел.
 * [6. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/06.Week) - Линейни структири от данни. Списък - реализация чрез масив и динамична реализация.
-* [7. Седмица]
+* [7. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/07.Week) - Линейни структири от данни. Стек и опашка. Реализации.
 * [8. Седмица]
 * [9. Седмица]
 * [10. Седмица]

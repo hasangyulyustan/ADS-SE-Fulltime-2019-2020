@@ -1,13 +1,10 @@
-﻿<Properties StartupConfiguration="{48EC4D78-DF1A-4D67-81B7-3DB814DC7AE3}|Default">
+﻿<Properties StartupConfiguration="{19FF0C3D-57B1-48A0-8175-0CB7DCB919E7}|Default">
   <MonoDevelop.Ide.ItemProperties.06.Week PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="06.Week/LinkedList.cs">
+  <MonoDevelop.Ide.ItemProperties.08.Week PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="08.Week/Tree.cs">
     <Files>
-      <File FileName="04.Week/Program.cs" Line="1" Column="1" />
-      <File FileName="Other/Program.cs" Line="11" Column="39" />
-      <File FileName="06.Week/Program.cs" Line="16" Column="30" />
-      <File FileName="07.Week/Program.cs" Line="1" Column="1" />
-      <File FileName="06.Week/CustomArrayList.cs" Line="58" Column="36" />
-      <File FileName="06.Week/LinkedList.cs" Line="4" Column="28" />
+      <File FileName="08.Week/BinarySearchTree.cs" Line="9" Column="25" />
+      <File FileName="08.Week/Tree.cs" Line="153" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,11 +14,11 @@
             <Node name="02.Week" expanded="True" />
             <Node name="03.Week" expanded="True" />
             <Node name="04.Week" expanded="True" />
-            <Node name="06.Week" expanded="True">
-              <Node name="LinkedList.cs" selected="True" />
-            </Node>
+            <Node name="06.Week" expanded="True" />
             <Node name="07.Week" expanded="True" />
-            <Node name="08.Week" expanded="True" />
+            <Node name="08.Week" expanded="True">
+              <Node name="Tree.cs" selected="True" />
+            </Node>
             <Node name="09.Week" expanded="True" />
             <Node name="10.Week" expanded="True" />
             <Node name="Other" expanded="True" />
@@ -33,8 +30,13 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/hasangyulyustan/projects/lectures/ads/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/06.Week/LinkedList.cs" relfile="06.Week/LinkedList.cs" line="119" column="1" />
+      <Breakpoint file="/Users/hasangyulyustan/projects/lectures/ads/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/06.Week/LinkedList.cs" relfile="06.Week/LinkedList.cs" line="122" column="1" />
+      <Breakpoint file="/Users/hasangyulyustan/projects/lectures/ads/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/06.Week/LinkedList.cs" relfile="06.Week/LinkedList.cs" line="123" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.01.Week PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.07.Week PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
