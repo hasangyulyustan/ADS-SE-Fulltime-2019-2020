@@ -6,18 +6,19 @@ namespace _08.Week
     public class TreeNode<T>
     {
         private T value;
-        private bool hasParent;
-        private List<TreeNode<T>> children;
+        public List<TreeNode<T>> children;
+        public bool hasParent;
 
         public TreeNode(T value)
         {
             if (value == null)
             {
-                throw new ArgumentNullException(
-                    "Cannot insert null value!");
+                throw new ArgumentNullException();
             }
+
             this.value = value;
             this.children = new List<TreeNode<T>>();
+            this.hasParent = false;
         }
 
         public T Value
@@ -26,11 +27,13 @@ namespace _08.Week
             {
                 return this.value;
             }
+
             set
             {
                 this.value = value;
             }
         }
+
 
         public int ChildrenCount
         {
@@ -44,18 +47,11 @@ namespace _08.Week
         {
             if (child == null)
             {
-                throw new ArgumentNullException(
-                    "Cannot insert null value!");
+                throw new ArgumentException();
             }
 
-            if (child.hasParent)
-            {
-                throw new ArgumentException(
-                    "The node already has a parent!");
-            }
-
-            child.hasParent = true;
             this.children.Add(child);
+            child.hasParent = true;
         }
 
         public TreeNode<T> GetChild(int index)
@@ -64,33 +60,11 @@ namespace _08.Week
         }
     }
 
+
     public class Tree<T>
     {
         private TreeNode<T> root;
 
-        public Tree(T value)
-        {
-            if (value == null)
-            {
-                throw new ArgumentNullException(
-                    "Cannot insert null value!");
-            }
-
-            this.root = new TreeNode<T>(value);
-        }
-
-        public Tree(T value, params Tree<T>[] children)
-            : this(value)
-        {
-            foreach (Tree<T> child in children)
-            {
-                this.root.AddChild(child.root);
-            }
-        }
-
-        /// <summary>
-        /// The root node or null if the tree is empty
-        /// </summary>
         public TreeNode<T> Root
         {
             get
@@ -99,57 +73,59 @@ namespace _08.Week
             }
         }
 
-        private void TraverseDFS(TreeNode<T> root, string spaces)
+        public Tree(T value)
         {
-            if (this.root == null)
+            if (value == null)
+            { }
+
+            this.root = new TreeNode<T>(value);
+        }
+
+        public Tree(T value, params Tree<T>[] subTrees)
+            :this(value)
+        {
+            foreach (var child in subTrees)
+            {
+                this.root.AddChild(child.root);
+            }
+        }
+
+
+
+        public void DFS()
+        {
+            Stack<TreeNode<T>> stack = new Stack<TreeNode<T>>();
+
+            stack.Push(this.root);
+
+
+            while(stack.Count > 0)
+            {
+                TreeNode<T> currentNode = stack.Pop();
+                Console.Write("{0} ", currentNode.Value);
+
+                for (int i = 0; i < currentNode.ChildrenCount; i++)
+                {
+                    TreeNode<T> childNode = currentNode.GetChild(i);
+
+                    stack.Push(childNode);
+                }
+            }
+        }
+
+
+        public void DFSRecursive(TreeNode<T> root)
+        {
+            Console.Write(" " + root.Value);
+
+            if (root.ChildrenCount == 0)
             {
                 return;
             }
 
-            Console.WriteLine(spaces + root.Value);
-
-            TreeNode<T> child = null;
             for (int i = 0; i < root.ChildrenCount; i++)
             {
-                child = root.GetChild(i);
-                TraverseDFS(child, spaces + "   ");
-            }
-        }
-
-        public void TraverseDFS()
-        {
-            this.TraverseDFS(this.root, string.Empty);
-        }
-
-        public void TraverseBFS()
-        {
-            Queue<TreeNode<T>> queue = new Queue<TreeNode<T>>();
-            queue.Enqueue(this.root);
-            while (queue.Count > 0)
-            {
-                TreeNode<T> currentNode = queue.Dequeue();
-                Console.Write("{0} ", currentNode.Value);
-                for (int i = 0; i < currentNode.ChildrenCount; i++)
-                {
-                    TreeNode<T> childNode = currentNode.GetChild(i);
-                    queue.Enqueue(childNode);
-                }
-            }
-        }
-
-        public void TraverseDFSWithStack()
-        {
-            Stack<TreeNode<T>> stack = new Stack<TreeNode<T>>();
-            stack.Push(this.root);
-            while (stack.Count > 0)
-            {
-                TreeNode<T> currentNode = stack.Pop();
-                Console.Write("{0} ", currentNode.Value);
-                for (int i = 0; i < currentNode.ChildrenCount; i++)
-                {
-                    TreeNode<T> childNode = currentNode.GetChild(i);
-                    stack.Push(childNode);
-                }
+                DFSRecursive(root.GetChild(i));
             }
         }
     }
