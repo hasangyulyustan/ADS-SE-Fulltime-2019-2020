@@ -9,8 +9,8 @@
 * [4. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/04.Week) - Алгоритми за сортиране. Сортиране чрез сливане. Бърза сортировка. Алгоритъм на Шел.
 * [6. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/06.Week) - Линейни структири от данни. Списък - реализация чрез масив и динамична реализация.
 * [7. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/07.Week) - Линейни структири от данни. Стек и опашка. Реализации.
-* [8. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/08.Week) - Дървовидни структури от данни. Дърви. Двоично дърво за търсене. Реализации.
-* [9. Седмица]
-* [10. Седмица]
+* [8. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/08.Week) - Дървовидни структури от данни. Дървo. Двоично дърво за търсене. Реализации.
+* [9. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/09.Week) - Дървовидни структури от данни. Двоично дърво за търсене - добавяне, търсене и изтриване. Графи. Представяне чрез матрица. Обхождане в широчина.
+* [10. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/10.Week) - Графи. Алгоритъм на Дийкстра. Dictionary. HashSet.
 * [Други задачи](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/Other) - Пермутации. Ханойски кули. Задача за лабиринта.
 

@@ -7,7 +7,7 @@ namespace _09.Week
     public class BinarySearchTree<T> where T : IComparable<T>
     {
 
-        private class BinaryTreeNode<T> : IComparable<BinaryTreeNode<T>> where T : IComparable<T>
+        public class BinaryTreeNode<T> : IComparable<BinaryTreeNode<T>> where T : IComparable<T>
         {
 
             public T value;
@@ -120,46 +120,14 @@ namespace _09.Week
             this.root = new BinaryTreeNode<T>(value, leftChildNode, rightChildNode);
         }
 
-        public void Insert(T value)
-        {
-            if (value == null)
-            {
-                throw new ArgumentNullException("Cannot insert null value!");
-            }
 
-            this.root = Insert(value, null, root);
-        }
-
-
-        private BinaryTreeNode<T> Insert(T value, BinaryTreeNode<T> parentNode, BinaryTreeNode<T> node)
-        {
-            if (node == null)
-            {
-                node = new BinaryTreeNode<T>(value);
-                node.parent = parentNode;
-            }
-            else
-            {
-                int compareTo = value.CompareTo(node.value);
-                if (compareTo < 0)
-                {
-                    node.leftChild = Insert(value, node, node.leftChild);
-                }
-                else if (compareTo > 0)
-                {
-                    node.rightChild = Insert(value, node, node.rightChild);
-                }
-            }
-
-            return node;
-        }
-
-        private BinaryTreeNode<T> Find(T value)
+        public BinaryTreeNode<T> Find(T value)
         {
             BinaryTreeNode<T> node = this.root;
 
             while (node != null)
             {
+
                 int compareTo = value.CompareTo(node.value);
 
                 if (compareTo < 0)
@@ -173,6 +141,39 @@ namespace _09.Week
                 else
                 {
                     break;
+                }
+            }
+
+            return node;
+        }
+
+        public void Insert(T value)
+        {
+            if (value == null)
+            {
+            }
+
+            this.root = Insert(value, null, root);
+        }
+
+        private BinaryTreeNode<T> Insert(T value, BinaryTreeNode<T> parentNode, BinaryTreeNode<T> node)
+        {
+            if (node == null)
+            {
+                node = new BinaryTreeNode<T>(value);
+                node.parent = parentNode;
+            }
+            else
+            {
+                int compareTo = value.CompareTo(node.value);
+
+                if (compareTo < 0)
+                {
+                    node.leftChild = Insert(value, node, node.leftChild);
+                }
+                else if (compareTo > 0)
+                {
+                    node.rightChild = Insert(value, node, node.rightChild);
                 }
             }
 
@@ -194,90 +195,61 @@ namespace _09.Week
 
         private void Remove(BinaryTreeNode<T> node)
         {
-            // Case 3: If the node has two children.
-            // Note that if we get here at the end
-            // the node will be with at most one child
-
             if (node.leftChild != null && node.rightChild != null)
             {
                 BinaryTreeNode<T> replacement = node.rightChild;
 
-                while (replacement.leftChild != null)
+                while(replacement.leftChild != null)
                 {
                     replacement = replacement.leftChild;
                 }
 
                 node.value = replacement.value;
-                node = replacement;
-            }
-
-            // Case 1 and 2: If the node has at most one child
-            BinaryTreeNode<T> theChild = node.leftChild != null ? node.leftChild : node.rightChild;
-
-            // If the element to be deleted has one child
-            if (theChild != null)
-            {
-                theChild.parent = node.parent;
-
-                // Handle the case when the element is the root
-                if (node.parent == null)
-                {
-                    root = theChild;
-                }
-                else
-                {
-                    // Replace the element with its child subtree
-                    if (node.parent.leftChild == node)
-                    {
-                        node.parent.leftChild = theChild;
-                    }
-                    else
-                    {
-                        node.parent.rightChild = theChild;
-                    }
-                }
+                replacement.parent.leftChild = null;
             }
             else
             {
-                // Handle the case when the element is the root
-                if (node.parent == null)
+                BinaryTreeNode<T> theChild = node.leftChild != null ? node.leftChild : node.rightChild;
+
+                if (theChild != null)
                 {
-                    root = null;
-                }
-                else
-                {
-                    // Remove the element - it is a leaf
-                    if (node.parent.leftChild == node)
+                    theChild.parent = node.parent;
+
+                    if (node.parent == null)
                     {
-                        node.parent.leftChild = null;
+                        root = theChild;
                     }
                     else
                     {
-                        node.parent.rightChild = null;
+                        if (node.parent.leftChild.CompareTo(node) == 0)
+                        {
+                            node.parent.leftChild = theChild;
+                        }
+                        else
+                        {
+                            node.parent.rightChild = theChild;
+                        }
+                    }
+                }
+                else
+                {
+                    if (node.parent == null)
+                    {
+                        root = null;
+                    }
+                    else
+                    {
+                        if (node.parent.leftChild.CompareTo(node) == 0)
+                        {
+                            node.parent.leftChild = null;
+                        }
+                        else
+                        {
+                            node.parent.rightChild = null;
+                        }
                     }
                 }
             }
-        }
-
-        private void PrintInorder(BinaryTreeNode<T> root)
-        {
-            if (root == null)
-            {
-                return;
-            }
-
-            PrintInorder(root.LeftChild);
-
-            Console.Write(root.Value + " ");
-
-            PrintInorder(root.RightChild);
-        }
-
-
-        public void PrintInorder()
-        {
-            PrintInorder(this.root);
-            Console.WriteLine();
-        }
+        } 
     }
 }
