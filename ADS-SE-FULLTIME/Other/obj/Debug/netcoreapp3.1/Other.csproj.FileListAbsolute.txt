@@ -1,0 +1,12 @@
+/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/Other/bin/Debug/netcoreapp3.1/Other.deps.json
+/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/Other/bin/Debug/netcoreapp3.1/Other.runtimeconfig.json
+/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/Other/bin/Debug/netcoreapp3.1/Other.runtimeconfig.dev.json
+/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/Other/bin/Debug/netcoreapp3.1/Other.dll
+/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/Other/bin/Debug/netcoreapp3.1/Other.pdb
+/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/Other/obj/Debug/netcoreapp3.1/Other.csprojAssemblyReference.cache
+/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/Other/obj/Debug/netcoreapp3.1/Other.csproj.CoreCompileInputs.cache
+/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/Other/obj/Debug/netcoreapp3.1/Other.AssemblyInfoInputs.cache
+/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/Other/obj/Debug/netcoreapp3.1/Other.AssemblyInfo.cs
+/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/Other/obj/Debug/netcoreapp3.1/Other.dll
+/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/Other/obj/Debug/netcoreapp3.1/Other.pdb
+/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/Other/obj/Debug/netcoreapp3.1/Other.genruntimeconfig.cache

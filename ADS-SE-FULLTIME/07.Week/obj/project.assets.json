@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hasangyulyustan/projects/lectures/ads/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/07.Week/07.Week.csproj",
+      "projectUniqueName": "/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/07.Week/07.Week.csproj",
       "projectName": "07.Week",
-      "projectPath": "/Users/hasangyulyustan/projects/lectures/ads/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/07.Week/07.Week.csproj",
+      "projectPath": "/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/07.Week/07.Week.csproj",
       "packagesPath": "/Users/hasangyulyustan/.nuget/packages/",
-      "outputPath": "/Users/hasangyulyustan/projects/lectures/ads/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/07.Week/obj/",
+      "outputPath": "/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/07.Week/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

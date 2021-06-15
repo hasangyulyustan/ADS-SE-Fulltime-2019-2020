@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hasangyulyustan/projects/lectures/ads/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/10.Week/10.Week.csproj": {}
+    "/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/10.Week/10.Week.csproj": {}
   },
   "projects": {
-    "/Users/hasangyulyustan/projects/lectures/ads/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/10.Week/10.Week.csproj": {
+    "/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/10.Week/10.Week.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hasangyulyustan/projects/lectures/ads/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/10.Week/10.Week.csproj",
+        "projectUniqueName": "/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/10.Week/10.Week.csproj",
         "projectName": "10.Week",
-        "projectPath": "/Users/hasangyulyustan/projects/lectures/ads/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/10.Week/10.Week.csproj",
+        "projectPath": "/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/10.Week/10.Week.csproj",
         "packagesPath": "/Users/hasangyulyustan/.nuget/packages/",
-        "outputPath": "/Users/hasangyulyustan/projects/lectures/ads/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/10.Week/obj/",
+        "outputPath": "/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/10.Week/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

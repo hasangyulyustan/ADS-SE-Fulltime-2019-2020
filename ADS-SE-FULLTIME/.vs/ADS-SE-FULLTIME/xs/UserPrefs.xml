@@ -1,26 +1,28 @@
-﻿<Properties StartupConfiguration="{24A4F420-E7FF-4C5D-8657-62BC61C05961}|Default">
+﻿<Properties StartupConfiguration="{E79B1F82-50ED-43ED-A286-404E09936C07}|Default">
   <MonoDevelop.Ide.ItemProperties.06.Week PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.10.Week PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.08.Week PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="07.Week/LinkedStack.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Other/HashTable.cs">
     <Files>
       <File FileName="08.Week/Program.cs" Line="17" Column="24" />
       <File FileName="08.Week/Tree.cs" />
       <File FileName="08.Week/BinarySearchTree.cs" />
       <File FileName="09.Week/BinarySearchTree.cs" />
       <File FileName="09.Week/Program.cs" />
-      <File FileName="09.Week/Graph.cs" />
-      <File FileName="10.Week/Graph.cs" />
-      <File FileName="10.Week/Program.cs" Line="25" Column="1" />
-      <File FileName="01.Week/Program.cs" Line="14" Column="14" />
-      <File FileName="02.Week/Program.cs" Line="88" Column="9" />
-      <File FileName="03.Week/Program.cs" Line="55" Column="9" />
-      <File FileName="04.Week/Program.cs" Line="100" Column="23" />
-      <File FileName="06.Week/CustomArrayList.cs" Line="25" Column="1" />
-      <File FileName="06.Week/LinkedList.cs" Line="4" Column="34" />
-      <File FileName="06.Week/Program.cs" Line="20" Column="48" />
-      <File FileName="07.Week/ArrayStack.cs" Line="52" Column="10" />
+      <File FileName="09.Week/Graph.cs" Line="1" Column="1" />
+      <File FileName="10.Week/Graph.cs" Line="31" Column="9" />
+      <File FileName="10.Week/Program.cs" Line="18" Column="71" />
+      <File FileName="01.Week/Program.cs" />
+      <File FileName="02.Week/Program.cs" />
+      <File FileName="03.Week/Program.cs" />
+      <File FileName="04.Week/Program.cs" />
+      <File FileName="06.Week/CustomArrayList.cs" />
+      <File FileName="06.Week/LinkedList.cs" />
+      <File FileName="06.Week/Program.cs" />
+      <File FileName="07.Week/ArrayStack.cs" />
       <File FileName="07.Week/LinkedStack.cs" Line="38" Column="12" />
+      <File FileName="Other/Program.cs" Line="318" Column="35" />
+      <File FileName="Other/HashTable.cs" Line="82" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -31,8 +33,11 @@
             <Node name="03.Week" expanded="True" />
             <Node name="04.Week" expanded="True" />
             <Node name="06.Week" expanded="True" />
-            <Node name="07.Week" expanded="True">
-              <Node name="LinkedStack.cs" selected="True" />
+            <Node name="07.Week" expanded="True" />
+            <Node name="09.Week" expanded="True" />
+            <Node name="10.Week" expanded="True" />
+            <Node name="Other" expanded="True">
+              <Node name="HashTable.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -42,11 +47,12 @@
   <MonoDevelop.Ide.ItemProperties.09.Week PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Other PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/hasangyulyustan/projects/lectures/ads/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/06.Week/LinkedList.cs" relfile="06.Week/LinkedList.cs" line="119" column="1" />
-      <Breakpoint file="/Users/hasangyulyustan/projects/lectures/ads/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/06.Week/LinkedList.cs" relfile="06.Week/LinkedList.cs" line="122" column="1" />
-      <Breakpoint file="/Users/hasangyulyustan/projects/lectures/ads/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/06.Week/LinkedList.cs" relfile="06.Week/LinkedList.cs" line="123" column="1" />
+      <Breakpoint file="/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/06.Week/LinkedList.cs" relfile="06.Week/LinkedList.cs" line="119" column="1" />
+      <Breakpoint file="/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/06.Week/LinkedList.cs" relfile="06.Week/LinkedList.cs" line="122" column="1" />
+      <Breakpoint file="/Users/hasangyulyustan/projects/uni/asd-2019-2020-repo/ADS-SE-Fulltime-2019-2020/ADS-SE-FULLTIME/06.Week/LinkedList.cs" relfile="06.Week/LinkedList.cs" line="123" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
