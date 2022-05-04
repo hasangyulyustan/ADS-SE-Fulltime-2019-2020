@@ -49,6 +49,21 @@ namespace Week_1
             return max;
         }
 
+        static int Min(int[] array)
+        {
+            int currentMin = 0;
+
+            for (int i = 1; i < array.Length; i++)
+            {
+                if (array[i] < array[currentMin])
+                {
+                    currentMin = i;
+                }
+            }
+
+            return currentMin;
+        }
+
         static int NearestAverage(double average, int[] arr)
         {
             int nearest = arr[0];
@@ -62,6 +77,60 @@ namespace Week_1
             }
 
             return nearest;
+        }
+
+        static int[] InsertElement(int[] array, int index, int element)
+        {
+            int[] newArray = new int[array.Length + 1];
+
+            for (int i = 0; i < index; i++)
+            {
+                newArray[i] = array[i];
+            }
+
+            newArray[index] = element;
+
+            for (int i = index + 1; i < newArray.Length; i++)
+            {
+                newArray[i] = array[i - 1];
+            }
+
+            return newArray;
+        }
+
+        static int[] RemoveAt(int[] array, int position)
+        {
+            int[] newArray = new int[array.Length - 1];
+
+            for (int i = 0; i < position; i++)
+            {
+                newArray[i] = array[i];
+            }
+
+            for (int i = position; i < newArray.Length; i++)
+            {
+                newArray[i] = array[i + 1];
+            }
+
+            return newArray;
+        }
+
+        static int[] DeleteElement(int[] array, int index)
+        {
+            int[] temp = new int[array.Length - 1];
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                int j = 0;
+
+                if (i != index)
+                {
+                    temp[j] = array[i];
+                    j++;
+                }
+            }
+
+            return temp;
         }
 
         static void EratostenPrimes(int n)

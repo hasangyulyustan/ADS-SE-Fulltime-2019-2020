@@ -9,6 +9,91 @@ namespace Week_2
 
         //####################################################################################
 
+        static string ToBinary(int n)
+        {
+            string binary = "";
+
+            while (n != 0)
+            {
+                binary += n % 2;
+                n = n / 2;
+            }
+
+            char[] arr = binary.ToCharArray();
+            Array.Reverse(arr);
+            return new string(arr);
+        }
+
+        //####################################################################################
+
+        static long Num10fromOtherBasis(string num_b, int basis)
+        {
+            long num10 = 0;
+            foreach (char ch in num_b)
+                num10 = num10 * basis + (int)(ch >= 'A' ? ch - 'A' + 10 : ch - '0');
+            return num10;
+        }
+
+        //####################################################################################
+
+        static string Convert10ToBase(int baseNumber, int n)
+        {
+            string binary = "";
+
+            while (n != 0)
+            {
+                int rem = n % baseNumber;
+
+                if (rem >= 10)
+                {
+                    binary += (char)('A' + (rem - 10));
+                }
+                else
+                {
+                    binary += n % baseNumber;
+                }
+
+                n = n / baseNumber;
+            }
+
+            char[] arr = binary.ToCharArray();
+            Array.Reverse(arr);
+            return new string(arr);
+        }
+
+        //####################################################################################
+
+        static int GCDIterative(int a, int b)
+        {
+            while (a % b != 0)
+            {
+                int temp = a % b;
+                a = b;
+                b = temp;
+            }
+            return b;
+        }
+
+        //####################################################################################
+
+        static int GCD2(int a, int b)
+        {
+            while (a != b)
+            {
+                if (a > b)
+                {
+                    a -= b;
+                }
+                else
+                {
+                    b -= a;
+                }
+            }
+            return a;
+        }
+
+        //####################################################################################
+
         static int GCDRecursive(int a, int b)
         {
             if (a == 0)
