@@ -3,7 +3,7 @@
 
 ### Упражнения по седмици
 
-* [1. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/01.Week) - Преговор. Общи задачи.
+* [1. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/01.Week) - Преговор върху масиви. Общи задачи.
 * [2. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/02.Week) - Преговор. Двумерни масиви.
 * [3. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/03.Week) - Алгоритми за сортиране. Метод на мехурчето. Метод чрез пряка селекция. Метод чрез вмъкване.
 * [4. Седмица](https://github.com/hasangyulyustan/ADS-SE-Fulltime-2019-2020/tree/master/ADS-SE-FULLTIME/04.Week) - Алгоритми за сортиране. Сортиране чрез сливане. Бърза сортировка. Алгоритъм на Шел.
