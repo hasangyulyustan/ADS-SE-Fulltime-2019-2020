@@ -20,12 +20,12 @@ namespace _10.Week
 
         public void RemvoeEdge(int i, int j)
         {
-            AddEdge(i, j, 0);
+            AddEdge(i, j, int.MaxValue);
         }
 
         public bool HasEdge(int i, int j)
         {
-            return vertices[i, j] != 0;
+            return vertices[i, j] != int.MaxValue;
         }
 
         public List<int> GetSuccessors(int i)
@@ -34,7 +34,7 @@ namespace _10.Week
 
             for (int j = 0; j < vertices.GetLength(0); j++)
             {
-                if (vertices[i, j] != 0)
+                if (vertices[i, j] != int.MaxValue)
                 {
                     successors.Add(j);
                 }
@@ -138,7 +138,7 @@ namespace _10.Week
                     // to v, and total weight of path 
                     // from src to v through u is smaller 
                     // than current value of dist[v] 
-                    if (!visited[v] && vertices[currentNode, v] != 0 && dist[currentNode] != int.MaxValue && dist[currentNode] + vertices[currentNode, v] < dist[v])
+                    if (!visited[v] && vertices[currentNode, v] != int.MaxValue && dist[currentNode] != int.MaxValue && dist[currentNode] + vertices[currentNode, v] < dist[v])
                     {
                         dist[v] = dist[currentNode] + vertices[currentNode, v];
                     }
@@ -157,6 +157,126 @@ namespace _10.Week
                           + "from Source\n");
             for (int i = 0; i < vertices.GetLength(0); i++)
                 Console.Write(i + " \t\t " + dist[i] + "\n");
+        }
+
+        public void Prim()
+        {
+            int verticesCount = vertices.GetLength(0);
+
+            int[] parent = new int[verticesCount];
+            int[] key = new int[verticesCount];
+            bool[] mstSet = new bool[verticesCount];
+
+            for (int i = 0; i < verticesCount; ++i)
+            {
+                key[i] = int.MaxValue;
+                mstSet[i] = false;
+            }
+
+            key[0] = 0;
+            parent[0] = -1;
+
+            for (int count = 0; count < verticesCount - 1; ++count)
+            {
+                int u = MinKey(key, mstSet, verticesCount);
+                mstSet[u] = true;
+
+                for (int v = 0; v < verticesCount; ++v)
+                {
+                    if (Convert.ToBoolean(vertices[u, v]) && mstSet[v] == false && vertices[u, v] < key[v])
+                    {
+                        parent[v] = u;
+                        key[v] = vertices[u, v];
+                    }
+                }
+            }
+
+            PrintPrimSolution(parent, vertices);
+        }
+
+        private int MinKey(int[] key, bool[] set, int verticesCount)
+        {
+            int min = int.MaxValue, minIndex = 0;
+
+            for (int v = 0; v < verticesCount; ++v)
+            {
+                if (set[v] == false && key[v] < min)
+                {
+                    min = key[v];
+                    minIndex = v;
+                }
+            }
+
+            return minIndex;
+        }
+
+        private void PrintPrimSolution(int[] parent, int[,] graph)
+        {
+            Console.WriteLine("Edge     Weight");
+            for (int i = 1; i < graph.GetLength(0); ++i)
+            {
+                Console.WriteLine("{0} - {1}    {2}", parent[i], i, graph[i, parent[i]]);
+            }
+        }
+
+        // Finds MST using Kruskal's algorithm
+        public void Kruskal()
+        {
+            int verticesCount = vertices.GetLength(0);
+            int[] parent = new int[verticesCount];
+
+            int mincost = 0; // Cost of min MST.
+
+            // Initialize sets of disjoint sets.
+            for (int i = 0; i < verticesCount; i++)
+            {
+                parent[i] = i;
+            }
+
+            // Include minimum weight edges one by one
+            int edge_count = 0;
+            while (edge_count < verticesCount - 1)
+            {
+                int min = int.MaxValue, a = -1, b = -1;
+
+                for (int i = 0; i < verticesCount; i++)
+                {
+                    for (int j = 0; j < verticesCount; j++)
+                    {
+                        if (Find(i, parent) != Find(j, parent) && vertices[i, j] < min)
+                        {
+                            min = vertices[i, j];
+                            a = i;
+                            b = j;
+                        }
+                    }
+                }
+
+                Union(a, b, parent);
+                Console.Write("Edge {0}:({1}, {2}) cost:{3} \n", edge_count++, a, b, min);
+                mincost += min;
+            }
+            Console.Write("\n Minimum cost= {0} \n", mincost);
+        }
+
+        // Find set of vertex i
+        int Find(int i, int[] parent)
+        {
+            while (parent[i] != i)
+            {
+                i = parent[i];
+            }
+            return i;
+        }
+
+        // Does union of i and j. It returns
+        // false if i and j are already in same
+        // set.
+        void Union(int i, int j, int[] parent)
+        {
+            int a = Find(i, parent);
+            int b = Find(j, parent);
+            parent[a] = b;
         }
 
     }
