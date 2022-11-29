@@ -165,6 +165,40 @@ namespace Week_1
 
         }
 
+        static int[] Merge(int[] arr1, int[] arr2)
+        {
+            int[] temp = new int[arr1.Length + arr2.Length];
+
+            for (int i = 0, j = 0, k = 0; i < temp.Length; i++)
+            {
+                if (arr1.Length == j)
+                {
+                    temp[i] = arr2[k];
+                    k++;
+                }
+                else if (arr2.Length == k)
+                {
+                    temp[i] = arr1[j];
+                    j++;
+                }
+                else
+                {
+                    if (arr1[j] < arr2[k])
+                    {
+                        temp[i] = arr1[j];
+                        j++;
+                    }
+                    else
+                    {
+                        temp[i] = arr2[k];
+                        k++;
+                    }
+                }
+            }
+
+            return temp;
+        }
+
         static void RandomMatrix(int[,] arr)
         {
             for (int i = 0; i < arr.GetLength(0); i++)

@@ -139,5 +139,10 @@ namespace _06.Week
             }
             Console.WriteLine("----------------------------");
         }
+
+        void Calculate(int Z)
+        {
+        }
+
     }
 }
